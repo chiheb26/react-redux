@@ -13,6 +13,6 @@ function CakeContainer(props) {
     </div>
   )
 }
-const mapStateToProps = state => {return {numOfCakes : state.numOfCakes}}
+const mapStateToProps = state => {return {numOfCakes : state.cake.numOfCakes}}
 const mapDispatchToProps = dispatch => {return {buyCake: ()=>dispatch(buyCake())}}
 export default connect(mapStateToProps,mapDispatchToProps)(CakeContainer)
